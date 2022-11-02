@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Reva Febrianti</title>
+</head>
+<body>
+    <b>Panjang Lapangan =</b> <input type="text" id="p1"><br>
+    <b>Lebar Lapangan =</b> <input type="text" id="l1"><br>
+<button type="button" onclick="hitungLuas()">Hitung Luas</button>
+<h2>Hasil</h2>
+<p id="Hasil"></p>
+<script>
+    function hitungLuas() {
+        p1= document.getElementById("p1"). value;
+        l1= document.getElementById("l1"). value;
+        let hasilLuas = eval(p1)*(l1);
+        document.getElementById("Hasil").innerHTML=hasilLuas;
+    }
+</script>
+
+</body>
+</html>
